@@ -43,3 +43,10 @@
     min-height: 195px;
   }
 }
+
+/* Zoom foto Aufa di depan rak buku */
+.photo-uploaded:nth-child(2) img {
+  object-fit: cover;
+  transform: scale(1.7);
+  transform-origin: 50% 55%;
+}
