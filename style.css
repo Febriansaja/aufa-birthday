@@ -9,3 +9,37 @@
 .spotify-player-wrap{width:100%;max-width:420px;margin-top:18px;border-radius:13px;overflow:hidden;box-shadow:0 10px 25px rgba(91,139,190,.12)}.spotify-player{display:block;border:0;min-height:152px}.music-toggle{white-space:nowrap}
 @media(max-width:800px){.spotify-player-wrap{margin-left:auto;margin-right:auto}}
 .photo-uploaded{width:100%;padding:0;cursor:zoom-in;border-radius:2px}.photo-uploaded img{display:block}.photo-uploaded .photo-caption{z-index:2}.photo-uploaded .photo-sticker{z-index:3;pointer-events:none}
+
+/* FIX GALERI KHUSUS HP */
+@media (max-width: 800px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .photo-card,
+  .photo-card:nth-child(2),
+  .photo-card:nth-child(3),
+  .photo-tall {
+    height: 230px;
+    min-height: 230px;
+    grid-row: auto;
+  }
+
+  .photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 380px) {
+  .photo-card,
+  .photo-card:nth-child(2),
+  .photo-card:nth-child(3),
+  .photo-tall {
+    height: 195px;
+    min-height: 195px;
+  }
+}
