@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff5f8" />
+  <meta name="description" content="A little birthday surprise made with love for Aufa." />
+  <title>For Aufa — A Little Birthday Surprise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div id="petals" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Kembali ke awal">a little gift <span>♡</span></a>
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Putar atau jeda About You"><span class="music-icon">♫</span><span id="musicLabel">About You · Play</span></button>
+  <audio id="backgroundMusic" src="assets/music/about-you.mp3" preload="metadata" loop></audio>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">A SPECIAL DAY · 21 NOVEMBER 2026</p>
+        <h1>For someone<br><em>so special.</em></h1>
+        <p class="hero-text">Ada sesuatu kecil yang ingin aku berikan untukmu hari ini. Dibuat dengan sepenuh hati, khusus untuk kamu.</p>
+        <button class="primary-btn" id="startBtn" type="button">Open your surprise <span>♡</span></button>
+        <p class="tiny-note">a little corner of the internet, just for you</p>
+      </div>
+      <div class="envelope-scene reveal" aria-label="Ilustrasi amplop hadiah">
+        <div class="sparkle sparkle-a">✧</div><div class="sparkle sparkle-b">✦</div>
+        <div class="flower flower-a">✿</div><div class="flower flower-b">✿</div>
+        <div class="envelope" id="envelope"><div class="letter-peek"><span>for Aufa</span><b>♡</b></div><div class="envelope-back"></div><div class="envelope-flap"></div><div class="envelope-front"></div><div class="envelope-seal">♡</div></div>
+        <span class="scene-caption">a little surprise is waiting</span>
+      </div>
+      <div class="scroll-hint">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+
+    <section class="birthday section" id="birthday">
+      <div class="section-inner center reveal">
+        <p class="eyebrow">TODAY IS ALL ABOUT YOU</p>
+        <p class="script-line">Happy birthday,</p>
+        <h2>Aufa Syakhima<br><span>Hutabarat</span></h2>
+        <div class="age-badge"><span>✧</span> twenty one <span>✧</span></div>
+        <p class="birthday-copy">Semoga hari ini dipenuhi hal-hal sederhana yang membuatmu tersenyum, orang-orang yang menyayangimu, dan banyak alasan untuk bahagia.</p>
+        <div class="confetti-word">make a wish <span>♡</span></div>
+      </div>
+      <div class="side-flower left">✿</div><div class="side-flower right">✿</div>
+    </section>
+
+    <section class="letter-section section" id="letter">
+      <div class="letter-card reveal">
+        <div class="letter-top"><span>21 · 11 · 2026</span><span>♡</span></div>
+        <p class="script-line">A little letter for you</p>
+        <h2>Dear Aufa,</h2>
+        <p class="letter-body" id="typedLetter" aria-live="polite"></p>
+        <div class="letter-sign">with warm wishes, <span>♡</span></div>
+        <button class="text-btn" id="showLetterBtn" type="button">Read the letter <span>→</span></button>
+      </div>
+      <div class="letter-deco deco-one">✿</div><div class="letter-deco deco-two">♡</div>
+    </section>
+
+    <section class="gallery-section section" id="gallery">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A FACE THAT MAKES THE DAY BRIGHTER</p>
+        <p class="script-line">A little collection</p>
+        <h2>Lovely <em>you.</em></h2>
+        <p>Beberapa potret dari seseorang yang punya senyum istimewa.</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <button class="photo-card photo-uploaded photo-tall" type="button" aria-label="Lihat foto Aufa 1">
+          <img src="assets/photos/aufa-01.jpg" alt="Foto Aufa 1" loading="lazy" />
+          <span class="photo-caption">under the evening lights ♡</span>
+          <span class="photo-sticker">♡</span>
+        </button>
+        <button class="photo-card photo-uploaded" type="button" aria-label="Lihat foto Aufa 2">
+          <img src="assets/photos/aufa-02.jpg" alt="Foto Aufa 2" loading="lazy" />
+          <span class="photo-caption">a lovely little moment ✿</span>
+          <span class="photo-sticker">♡</span>
+        </button>
+        <button class="photo-card photo-uploaded" type="button" aria-label="Lihat foto Aufa 3">
+          <img src="assets/photos/aufa-03.jpg" alt="Foto Aufa 3" loading="lazy" />
+          <span class="photo-caption">just being you ♡</span>
+          <span class="photo-sticker">♡</span>
+        </button>
+        <button class="photo-card photo-uploaded" type="button" aria-label="Lihat foto Aufa 4">
+          <img src="assets/photos/aufa-04.jpg" alt="Foto Aufa 4" loading="lazy" />
+          <span class="photo-caption">a smile to remember ✿</span>
+          <span class="photo-sticker">♡</span>
+        </button>
+        <button class="photo-card photo-uploaded photo-tall" type="button" aria-label="Lihat foto Aufa 5">
+          <img src="assets/photos/aufa-05.jpg" alt="Foto Aufa 5" loading="lazy" />
+          <span class="photo-caption">holding onto little joys ♡</span>
+          <span class="photo-sticker">♡</span>
+        </button>
+        <button class="photo-card photo-uploaded" type="button" aria-label="Lihat foto Aufa 6">
+          <img src="assets/photos/aufa-06.jpg" alt="Foto Aufa 6" loading="lazy" />
+          <span class="photo-caption">quietly beautiful ✿</span>
+          <span class="photo-sticker">♡</span>
+        </button>
+        <button class="photo-card photo-uploaded" type="button" aria-label="Lihat foto Aufa 7">
+          <img src="assets/photos/aufa-07.jpg" alt="Foto Aufa 7" loading="lazy" />
+          <span class="photo-caption">softest kind of smile ♡</span>
+          <span class="photo-sticker">♡</span>
+        </button>
+        <button class="photo-card photo-uploaded" type="button" aria-label="Lihat foto Aufa 8">
+          <img src="assets/photos/aufa-08.jpg" alt="Foto Aufa 8" loading="lazy" />
+          <span class="photo-caption">one of my favorite views ✿</span>
+          <span class="photo-sticker">♡</span>
+        </button>
+      </div>
+      <p class="gallery-tip">A little gallery of your lovely moments. Tap any photo to see it closer ♡</p>
+    </section>
+
+    <section class="music-section section" id="music">
+      <div class="music-card reveal">
+        <div class="vinyl-wrap"><div class="vinyl"><div class="vinyl-center">♡</div></div><span class="vinyl-flower">✿</span></div>
+        <div class="music-copy">
+          <p class="eyebrow">A SONG FOR YOUR DAY</p>
+          <p class="script-line">Press play & enjoy</p>
+          <h2>A melody<br><em>for you.</em></h2>
+          <p>Lagu pilihanmu, diputar langsung dari halaman ini. Tekan tombol musik untuk play atau pause.</p>
+          <div class="track-row"><span class="equalizer" id="equalizer"><i></i><i></i><i></i><i></i></span><span>About You · The 1975</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wish-section section" id="wish">
+      <div class="wish-inner reveal">
+        <p class="eyebrow">ONE LAST LITTLE SURPRISE</p>
+        <p class="script-line">Close your eyes, make a wish</p>
+        <h2>A wish just<br><em>for you.</em></h2>
+        <div class="cake-area">
+          <div class="candle-flame" id="flame"></div>
+          <div class="candle"></div>
+          <div class="cake-top"></div><div class="cake-body"><span>21</span></div><div class="cake-plate"></div>
+        </div>
+        <p class="wish-instruction" id="wishInstruction">Klik lilinnya untuk meniup dan membuka pesan terakhir ♡</p>
+        <button class="primary-btn" id="blowBtn" type="button">Make a wish <span>✧</span></button>
+        <div class="final-message" id="finalMessage" aria-live="polite">
+          <p class="script-line">From the bottom of my heart</p>
+          <h3>Keep blooming, Aufa.</h3>
+          <p>Semoga dunia selalu punya cara untuk bersikap baik kepadamu. Jangan pernah berhenti menjadi dirimu yang istimewa. Kalau suatu hari langkahmu terasa berat, semoga kamu selalu menemukan alasan untuk tersenyum lagi.</p>
+          <p class="final-emphasis">You deserve all the beautiful things. ♡</p>
+          <span class="signature">someone who cares about you</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>made with a little extra love</span><b>♡</b><span>just for Aufa · 2026</span></footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
